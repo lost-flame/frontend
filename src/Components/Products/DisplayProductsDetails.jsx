@@ -12,7 +12,7 @@ const DisplayProductsDetails = () => {
 
     const productApi = async () => {
         try {
-            const response = await fetch(`https://frontend1-5hsb.onrender.com/product/getProduct/${location.state}`, {
+            const response = await fetch(`https://backend-jwcc.onrender.comb.onrender.com/product/getProduct/${location.state}`, {
                 method: 'GET',
                 headers: { 'Accept': 'application/json' },
                 credentials: 'include'
@@ -40,7 +40,7 @@ const DisplayProductsDetails = () => {
 
     const handleCart = async () => {
         try {
-            const response = await fetch(`https://frontend1-5hsb.onrender.com/product/addCartProduct`, {
+            const response = await fetch(`https://backend-jwcc.onrender.comb.onrender.com/product/addCartProduct`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify({
@@ -79,7 +79,7 @@ const DisplayProductsDetails = () => {
                                 Products Details
                             </div>
                             <div className='w-75 p-2 m-0 bg-body'>
-                                <img className='w-100' src={`https://frontend1-5hsb.onrender.com/uploads/${productData.productimg}`} alt='img' />
+                                <img className='w-100' src={`https://backend-jwcc.onrender.comb.onrender.com/uploads/${productData.productimg}`} alt='img' />
                                 {
                                     productData.length !== 0 &&
                                     (
