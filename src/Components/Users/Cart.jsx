@@ -6,7 +6,7 @@ const Cart = () => {
 
     const cartApi = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/product/getAllCartProducts`, {
+            const response = await fetch(`https://backend-jwcc.onrender.com/product/getAllCartProducts`, {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 credentials: 'include'
@@ -33,7 +33,7 @@ const Cart = () => {
         });
 
         try {
-            const response = await fetch(`http://localhost:5000/product/updateQuantity/${curId}`, {
+            const response = await fetch(`https://backend-jwcc.onrender.com/product/updateQuantity/${curId}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 credentials: 'include',
@@ -53,7 +53,7 @@ const Cart = () => {
     const handleDelete = async (id) => {
         try {
             console.log('cart id: ', id);
-            const response = await fetch(`http://localhost:5000/product/deleteUserCart/${id}`, {
+            const response = await fetch(`https://backend-jwcc.onrender.com/product/deleteUserCart/${id}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 credentials: 'include'

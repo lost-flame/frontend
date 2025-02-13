@@ -10,7 +10,7 @@ const Account = () => {
 
     const userDataApi = async () => {
         try {
-            const response = await fetch('http://localhost:5000/user/getUser', {
+            const response = await fetch('https://backend-jwcc.onrender.com/user/getUser', {
                 method: 'GET',
                 headers: { 'Accept': 'application/json' }, credentials: 'include'
             });
@@ -53,7 +53,7 @@ const Account = () => {
         console.log(formData);
 
         try {
-            const response = await fetch(`http://localhost:5000/user/updateUser/${userData.id}`, {
+            const response = await fetch(`https://backend-jwcc.onrender.com/user/updateUser/${userData.id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 credentials: 'include',

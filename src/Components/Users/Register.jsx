@@ -24,7 +24,7 @@ const Register = () => {
         console.log(formData);
 
         try {
-            const response = await fetch('http://localhost:5000/user/createData', {
+            const response = await fetch('https://backend-jwcc.onrender.com/user/createData', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify(formData),

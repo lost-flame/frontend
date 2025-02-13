@@ -10,7 +10,7 @@ const DisplayProduct = () => {
 
     const paginationApi = async () => {
         try {
-            const response = await fetch('http://localhost:5000/product/pagination', {
+            const response = await fetch('https://backend-jwcc.onrender.com/product/pagination', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify({ curPage: currentPage, itemPage: itemsPerPage }),
