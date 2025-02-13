@@ -56,7 +56,7 @@ const DisplayProduct = () => {
                                                 <div key={i} className="card w-25 m-2">
                                                     <div>
                                                         <figure>
-                                                            <img src={`http://localhost:5000/uploads/${e.productimg}`} className="card-img-top" alt="productimg" />
+                                                            <img src={`https://backend-jwcc.onrender.com/uploads/${e.productimg}`} className="card-img-top" alt="productimg" />
                                                         </figure>
                                                     </div>
                                                     <div className="card-body">

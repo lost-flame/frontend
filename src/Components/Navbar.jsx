@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const cartApi = async () => {
         try {
-            const response = await fetch(`https://backend-jwcc.onrender.comb.onrender.com/product/getUserCartId`, {
+            const response = await fetch(`https://backend-jwcc.onrender.com/product/getUserCartId`, {
                 method: 'GET',
                 headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 credentials: 'include'

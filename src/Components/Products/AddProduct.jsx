@@ -41,7 +41,7 @@ const AddProduct = () => {
 
             newdata.append('categoryName', selectValue);
 
-            let response = await fetch('https://backend-jwcc.onrender.comb.onrender.com/product/addProduct', {
+            let response = await fetch('https://backend-jwcc.onrender.com/product/addProduct', {
                 method: 'POST',
                 headers: { 'Accept': 'application/json' },
                 body: newdata
@@ -74,7 +74,7 @@ const AddProduct = () => {
     }
 
     const categoryApi = async () => {
-        let response = await fetch('https://backend-jwcc.onrender.comb.onrender.com/product/getAllCategories', {
+        let response = await fetch('https://backend-jwcc.onrender.com/product/getAllCategories', {
             method: 'GET',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
         });
